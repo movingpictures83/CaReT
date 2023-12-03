@@ -1,0 +1,2 @@
+csvfile	data/iris.csv
+pct	0.8

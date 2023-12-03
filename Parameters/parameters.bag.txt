@@ -1,0 +1,2 @@
+trainfile	sonar.train.csv
+numbags	50

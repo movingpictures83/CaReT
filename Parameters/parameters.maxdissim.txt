@@ -1,0 +1,2 @@
+csvfile	data/boston.csv
+predictors	data/predictors.txt

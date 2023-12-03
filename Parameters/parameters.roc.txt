@@ -1,0 +1,4 @@
+x	data/x.txt
+y	data/y.txt
+xname	"yes"
+yname	"no"
