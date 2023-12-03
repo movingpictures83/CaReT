@@ -1,0 +1,9 @@
+Prefix pipelines/CaReT/
+Pipeline pipelines/CaReT/config.viz.txt
+Pipeline pipelines/CaReT/config.preprocess.txt
+Pipeline pipelines/CaReT/config.datasplit.txt
+Pipeline pipelines/CaReT/config.traintune.txt
+Pipeline pipelines/CaReT/config.misc.txt
+Pipeline pipelines/CaReT/config.performance.txt
+Pipeline pipelines/CaReT/config.othertrain.txt
+

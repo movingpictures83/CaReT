@@ -1,0 +1,3 @@
+Plugin TrainTest inputfile Parameters/parameters.traintest.txt outputfile iris
+Plugin MaxDissim inputfile Parameters/parameters.maxdissim.txt outputfile newsamples.csv
+Plugin GroupKFold inputfile Parameters/parameters.groupkfold.txt outputfile none

@@ -1,0 +1,7 @@
+Plugin ScatterPair inputfile data/iris.csv outputfile VIZ/IRIS/scatterpair.png
+Plugin ScatterEllipse inputfile data/iris.csv outputfile VIZ/IRIS/scatterellipse.png
+Plugin DensityPlot inputfile data/iris.csv outputfile VIZ/IRIS/densityplot.png
+Plugin DensityOverlay inputfile data/iris.csv outputfile VIZ/IRIS/densityoverlay.png
+
+Plugin TrellisScatter inputfile Parameters/parameters.regression.txt outputfile VIZ/BOSTON/trellisscatter.png
+Plugin TrellisSmooth inputfile Parameters/parameters.regression.txt outputfile VIZ/BOSTON/trellissmooth.png

@@ -1,0 +1,15 @@
+Plugin Dummy inputfile data/etitanic.csv outputfile dummy.csv
+Plugin NearZeroVar inputfile data/mdrrDescr.csv outputfile nzv.csv
+Plugin CorrPred inputfile data/mdrrDescr.csv outputfile none
+Plugin CorrHigh inputfile data/mdrrDescr.csv outputfile none
+Plugin LinComb inputfile data/ltfr.csv outputfile nolin.csv
+Plugin CenterScale inputfile Parameters/parameters.centerscale.txt outputfile output/centerscale
+Plugin SpatialSign inputfile Parameters/parameters.centerscale.txt outputfile VIZ/spatialsign.png
+Plugin BoxCox inputfile Parameters/parameters.centerscale.txt outputfile none
+Plugin YeoJohnson inputfile Parameters/parameters.centerscale.txt outputfile none
+Plugin Manly inputfile Parameters/parameters.centerscale.txt outputfile none
+Plugin KNNImpute inputfile Parameters/parameters.centerscale.txt outputfile none
+Plugin BagImpute inputfile Parameters/parameters.centerscale.txt outputfile none
+Plugin MedianImpute inputfile Parameters/parameters.centerscale.txt outputfile none
+Plugin ZeroVar inputfile Parameters/parameters.centerscale.txt outputfile none
+Plugin ConditionalX inputfile Parameters/parameters.centerscale.txt outputfile none

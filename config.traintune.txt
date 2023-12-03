@@ -1,0 +1,51 @@
+Plugin CreateDataPartition inputfile Parameters/parameters.createdatapartition.txt outputfile sonar
+
+#################################################################################
+# Train control
+Plugin RepeatedCV inputfile none outputfile bootstrap/repeatedCV.rds
+Plugin Boot inputfile none outputfile bootstrap/boot.rds
+Plugin Boot632 inputfile none outputfile bootstrap/boot632.rds
+Plugin OptimismBoot inputfile none outputfile bootstrap/optimismboot.rds
+Plugin BootAll inputfile none outputfile bootstrap/bootAll.rds
+Plugin CV inputfile none outputfile bootstrap/CV.rds
+Plugin LOOCV inputfile none outputfile bootstrap/LOOCV.rds
+Plugin LGOCV inputfile none outputfile bootstrap/LGOCV.rds
+Plugin OOB inputfile none outputfile bootstrap/OOB.rds
+Plugin TimeSlice inputfile none outputfile bootstrap/timeslice.rds
+Plugin AdaptiveCV inputfile none outputfile bootstrap/adaptiveCV.rds
+Plugin AdaptiveBoot inputfile none outputfile bootstrap/adaptiveBoot.rds
+Plugin AdaptiveLGOCV inputfile none outputfile bootstrap/adaptiveLGOCV.rds
+################################################################################
+
+
+################################################################################
+# Train
+Plugin AdaBoost inputfile Parameters/parameters.train.txt outputfile train/AdaBoost.rds
+Plugin GBM inputfile Parameters/parameters.train.txt outputfile train/GBM.rds
+Plugin SVMRadial inputfile Parameters/parameters.train.txt outputfile train/SVMRadial.rds
+Plugin RDA inputfile Parameters/parameters.train.txt outputfile train/RDA.rds
+Plugin ROC inputfile Parameters/parameters.roc.txt outputfile ROC.csv
+################################################################################
+
+###########################################################################################
+# Tune
+Plugin TuningGrid inputfile Parameters/parameters.tuninggrid.txt outputfile tuninggrid.csv
+###########################################################################################
+
+###########################################################################################
+# Viz
+Plugin Accuracy inputfile train/GBM.rds outputfile VIZ/Accuracy.png
+Plugin Kappa inputfile train/GBM.rds outputfile VIZ/Kappa.png
+Plugin PredictClass inputfile Parameters/parameters.predict.txt outputfile sonar.predict.class.csv
+Plugin PredictProb inputfile Parameters/parameters.predict.txt outputfile sonar.predict.prob.csv
+Plugin StripPlot inputfile train/GBM.rds outputfile VIZ/Strip.png
+Plugin Histogram  inputfile train/GBM.rds outputfile VIZ/Histogram.png
+###########################################################################################
+
+Plugin Resample inputfile Parameters/parameters.resample.txt outputfile resample.rds
+Plugin BWPlot inputfile resample.rds outputfile VIZ/bwplot.png
+Plugin DotPlot inputfile resample.rds outputfile VIZ/dotplot.png
+Plugin BlandAltman inputfile resample.rds outputfile VIZ/blandaltman.png
+Plugin SPloM inputfile resample.rds outputfile VIZ/splom.png
+Plugin ModelDiff inputfile resample.rds outputfile none
+Plugin VarImp inputfile train/GBM.rds outputfile none

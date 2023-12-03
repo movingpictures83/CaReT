@@ -1,0 +1,7 @@
+Plugin ConfusionMatrix inputfile data/test_set.rds outputfile none
+Plugin PostResample inputfile data/test_set.rds outputfile none
+Plugin TwoClassSummary inputfile data/test_set.rds outputfile none
+Plugin PrecisionSummary inputfile data/test_set.rds outputfile none
+Plugin MNLogLoss inputfile data/test_set.rds outputfile none
+Plugin LiftCurve inputfile data/lift_results.rds outputfile VIZ/Lift.png
+Plugin CalibrationCurve inputfile data/lift_results.rds outputfile VIZ/Calibration.png

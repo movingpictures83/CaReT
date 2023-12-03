@@ -1,0 +1,2 @@
+Plugin KNN3 inputfile Parameters/parameters.knn3.txt outputfile none
+Plugin Bag inputfile Parameters/parameters.bag.txt outputfile none
