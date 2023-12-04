@@ -1,5 +1,5 @@
 Plugin Dummy inputfile data/etitanic.csv outputfile dummy.csv
-Plugin NearZeroVar inputfile data/mdrrDescr.csv outputfile nzv.csv
+Plugin NearZero inputfile data/mdrrDescr.csv outputfile nzv.csv
 Plugin CorrPred inputfile data/mdrrDescr.csv outputfile none
 Plugin CorrHigh inputfile data/mdrrDescr.csv outputfile none
 Plugin LinComb inputfile data/ltfr.csv outputfile nolin.csv
